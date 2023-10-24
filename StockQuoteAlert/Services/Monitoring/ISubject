@@ -1,0 +1,13 @@
+
+namespace StockQuoteAlert.Services.Monitoring
+
+{
+
+    public interface ISubject
+    {
+        void RegisterObserver(IObserver observer);
+        void RemoveObserver(IObserver observer);
+        void NotifyObservers(decimal newPrice);
+    }
+
+}

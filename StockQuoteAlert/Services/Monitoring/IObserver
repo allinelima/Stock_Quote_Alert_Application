@@ -1,0 +1,8 @@
+namespace StockQuoteAlert.Services.Monitoring
+{
+    public interface IObserver
+    {
+        // Método chamado pelo objeto sujeito (StockMonitor) quando houver uma atualização
+        void Update(string ativo, string acao, decimal novoPreco);
+    }
+}

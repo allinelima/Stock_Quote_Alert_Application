@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "laU3EX0et7Cx+hDtGleVFlXW+hwAr63hSQnzlMUmfkq2BOKcB7VIxmroGJt2Ce06NwQMUrvkJJV2v+MniJYxzw==",
+  "success": true,
+  "projectFilePath": "/home/aline/Documentos/Projetos/C#/StockQuoteAlert/StockQuoteAlert.csproj",
+  "expectedPackageFiles": [
+    "/home/aline/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/aline/.nuget/packages/restsharp/110.2.0/restsharp.110.2.0.nupkg.sha512",
+    "/home/aline/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/aline/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/home/aline/.nuget/packages/system.text.json/7.0.2/system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
