@@ -1,0 +1,32 @@
+using NUnit.Framework;
+using StockQuoteAlert.Services.Monitoring;
+
+namespace StockQuoteAlert.Tests
+{
+    [TestFixture]
+    public class StockMonitorTests
+    {
+        [Test]
+        public void TestPriceChangeAlert()
+        {
+            // Crie uma instância do StockMonitor
+            StockMonitor stockMonitor = new StockMonitor("AAPL", 150, 200);
+
+            // Defina um preço fictício para testar
+            decimal testPrice = 180;
+
+            // Criar um objeto de teste do Observador (você pode criar uma classe de observador de teste fictícia)
+            TestObserver testObserver = new TestObserver();
+
+            // Registrar o observador
+            stockMonitor.RegisterObserver(testObserver);
+
+            // Chame o método StartMonitoring para simular uma mudança de preço
+            stockMonitor.StartMonitoring();
+
+            // Verifique se o observador foi notificado corretamente
+            Assert.AreEqual("COMPRA", testObserver.Action);
+            Assert.AreEqual(testPrice, testObserver.NewPrice);
+        }
+    }
+}
